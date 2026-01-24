@@ -1,5 +1,5 @@
 footer{
-    background: #FFF9EA;
+     background: #FFF9EA ;/* */
 
 }
 
@@ -61,7 +61,7 @@ footer img{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color:#00000000; ;
+    background-color:#00000000;
     padding: 15px 25px;
     border-radius: 50%;
     cursor: pointer;
@@ -100,4 +100,42 @@ footer img{
         flex-direction: column;
         gap: 1.25rem;
     }
+
+    /* Voltar ao topo */
+
+    #VoltarTopo {
+        position: sticky;
+        bottom: 20px;
+        right: 20px;
+        background-color:#00000000;  /**/  
+        padding: 15px 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s; /* Adicionando transição suave */
+    }
+
+    #VoltarTopo.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #VoltarTopo .arrow {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgb(37, 230, 30); /* Cor da seta para cima */
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Roda para cima */
+    }
+
+    #VoltarTopo.clicked .arrow {
+        border-bottom: 10px solid red; /* Cor durante o clique */
+    }
+
 }

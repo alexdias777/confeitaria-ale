@@ -1,0 +1,56 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  background: #e0f2fe;
+  height: 100vh;
+
+  /* Centralizando o app */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* principal */
+.container {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Busca */
+input {
+  
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/*Placeholder*/
+input::placeholder {
+  color: blueviolet;
+  font-style: italic;
+  opacity: 1; /* Necessário para Firefox */
+  
+}
+
+
+
+/* Botão */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Retorno do clima */
+#result p {
+  margin: 6px 0;
+}

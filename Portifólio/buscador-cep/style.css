@@ -1,0 +1,49 @@
+/* Remove margens e define fonte padrão */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo geral da página */
+body {
+  background: #f4f4f4;
+  height: 100vh;
+
+  /* Centraliza o conteúdo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do app */
+.container {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+
+  /* Sombra leve */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  /* Centraliza texto */
+  text-align: center;
+}
+
+/* Campo de entrada */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Botão */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Resultado */
+#result p {
+  margin: 5px 0;
+}
