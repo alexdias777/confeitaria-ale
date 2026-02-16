@@ -164,8 +164,10 @@ function updateCart() {
     totalValueDisplay.textContent = totalValue.toFixed(2); 
     // Atualiza valor total com duas casas decimais
 
-    finalizeButton.style.display = totalItems > 0 ? "block" : "none"; 
-    // Mostra botão apenas se tiver itens
+    if (finalizeButton) {
+        finalizeButton.style.display = totalItems > 0 ? "block" : "none"; 
+    }
+    // Mostra botão apenas se tiver itens (verifica existência do elemento)
 }
 
 
