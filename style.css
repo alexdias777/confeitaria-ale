@@ -1,0 +1,290 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão do site */
+    background-color: #dddad4; /* Cor de fundo */
+    color: #333333; /* Cor do texto */
+}
+
+/* Cabeçalho */
+header {
+    background:  #C568DF; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    width: 100%; /* Largura total do cabeçalho */
+    height: 4.6875rem;
+    padding: 0.9375rem 1.25rem; /* Preenchimento interno do cabeçalho */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* titulo */
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Centraliza o título e o parágrafo na seção desejada */
+section h2 {
+    margin-top: 0.7%;
+    text-align: center; /* Centraliza o texto */
+    color: #0a0a0a; /* Cor padrão do site */
+    font-family: 'Great Vibes', cursive; /* Fonte elegante */
+}
+
+
+/* Carrossel */
+.carousel {
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Container das imagens */
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* ===== DESKTOP PADRÃO (4 imagens) ===== */
+.slides img {
+    width: 25%;
+    height: clamp(220px, 22vw, 420px);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* ===== TABLET (2 imagens) ===== */
+@media (max-width: 1024px) {
+    .slides img {
+        width: 50%;
+    }
+}
+
+/* ===== CELULAR (1 imagem) ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem; /* Ajusta o preenchimento em telas pequenas */
+    }
+
+    .logo {
+        font-size: 2rem; /* Ajusta ainda mais o tamanho da fonte se necessário */
+    }
+    .slides img {
+        width: 100%;
+    }
+}
+
+
+button.prev, button.next {
+    position: absolute; /* Posiciona os botões sobre o carrossel */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    padding: 0.625rem; /* Preenchimento interno */
+    font-size: 1.125rem; /* Tamanho da fonte */
+    z-index: 10; /* Garante que os botões fiquem acima das imagens */
+}
+
+button.prev {
+    left: 0.625rem; /* Distância da esquerda */
+}
+
+button.next {
+    right: 0.625rem; /* Distância da direita */
+}
+
+/* Seção de produtos */
+.produtos {
+    background: #dddad4; /* Fundo branco com leve transparência */
+    padding: 2.5rem; /* Preenchimento interno */
+    margin-top: 1.25rem; /* Margem superior */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    flex: 1; /* Permite que a seção de produtos ocupe o espaço restante */
+}
+
+/* Grade de produtos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+
+/* Cada produto */
+.produto {
+    height: 100%;
+    background: #5e5b5b27; /* Cor de fundo dos produtos */
+    padding: 1.25rem; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+}
+
+/* Imagem circular */
+
+.circular-image {
+    width: 100%;
+    max-width: 212px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* bt carrinho */
+.add-to-cart {
+    background-color: #C568DF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: .625rem 1.25rem; /* Preenchimento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin-top: .3125rem; /* Margem superior do botão */
+}
+
+.add-to-cart:hover {
+    color: white;
+    background-color: rgb(47, 167, 47);
+    box-shadow: 0rem 0rem .75rem .25rem rgba(4, 148, 16, 0.301); 
+}
+
+/* Carrinho de compras */
+.carrinho {
+    background: #dddad4; /* Fundo branco com leve transparência */
+    padding: 1.25rem; /* Preenchimento interno */
+    margin-top: 1.25rem; /* Margem superior */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+}
+
+.carrinho h2 {
+    color: #C568DF;
+}
+
+/*Social midias*/
+
+.social-media-buttons{
+    display: flex;
+    gap: 1.125rem;
+}
+
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: .625rem;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0rem 0rem .75rem .25rem rgba(0,0,0,0.1);
+    transition: .3s easy;
+}
+
+
+.whats:hover {
+    color: white;
+    background-color: rgb(47, 167, 47);
+    box-shadow: 0rem 0rem .75rem .25rem rgba(4, 148, 16, 0.301);   
+}
+
+
+/* btn mensagem de finalização de compra */
+#GoIfood{
+    background-color: #C568DF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 0.75rem;
+    border: none; /* Sem borda */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 0.625rem 1.25rem; /* Preenchimento interno */
+
+    margin-top: 1.25rem; /* Margem superior do botão */
+    margin-bottom: .7125rem;
+}
+
+#GoIfood:hover {
+    color: white;
+    background-color: rgb(47, 167, 47);
+    box-shadow: 0rem 0rem .75rem .25rem rgba(4, 148, 16, 0.301); 
+}
+
+/* Quantidade de items e soma  */
+
+#soma{
+    color: black;
+}
+
+#total-items {
+    color: blue;
+    font-weight: bold;
+}
+
+#total {
+    color: black;
+}
+
+#total-value {
+    color: red;
+    font-weight: bold;
+
+}
+
+.finalize-purchase{
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+footer {
+    background:  #C568DF; /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 1.00rem; /* Preenchimento interno */
+    /* height: 5vh; Altura fixa do rodapé */
+    margin-top: auto; /* Faz o rodapé se mover para a parte inferior */
+}
+
+footer h4{
+    font-size: 0.75rem;
+    color: white;
+}
+footer p{
+    font-size: 0.35rem;
+}
+
+/* Botão "Voltar ao Topo" */
+#back-to-top {
+    position: fixed; /* Fixa na tela */
+    bottom: 1.25rem; /* Distância do fundo */
+    right: 1.25rem; /* Distância da direita */
+    display: none; /* Inicialmente escondido */
+    background-color: #81c9e6; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 0.625rem 15px; /* Preenchimento interno */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+/* Botão "Voltar ao Topo" em hover */
+#back-to-top:hover {
+    background-color: #af43f7; /* Cor ao passar o mouse */
+}
+
+
