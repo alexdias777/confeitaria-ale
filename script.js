@@ -225,7 +225,6 @@ document.getElementById("back-to-top").onclick = function() {
     document.documentElement.scrollTop = 0; 
     // Volta ao topo para outros navegadores
 };
-=======
 
 
 let currentSlide = 0; 
