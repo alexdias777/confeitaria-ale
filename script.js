@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 let currentSlide = 0; 
 // Variável que guarda qual grupo de imagens está visível atualmente
 
@@ -458,4 +455,4 @@ document.getElementById("back-to-top").onclick = function() {
     document.documentElement.scrollTop = 0; 
     // Volta ao topo para outros navegadores
 };
->>>>>>> 909fbecc866e3bf86cfdb44865d5ebd46f39642c
+
