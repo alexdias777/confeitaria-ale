@@ -33,6 +33,14 @@ header {
     letter-spacing: 2px;
 }
 
+/* Centraliza o título e o parágrafo na seção desejada */
+section h2 {
+    margin-top: 0.7%;
+    text-align: center; /* Centraliza o texto */
+    color: #0a0a0a; /* Cor padrão do site */
+    font-family: 'Great Vibes', cursive; /* Fonte elegante */
+}
+
 
 /* Carrossel */
 .carousel {
@@ -65,6 +73,13 @@ header {
 
 /* ===== CELULAR (1 imagem) ===== */
 @media (max-width: 600px) {
+    header {
+        padding: 1rem; /* Ajusta o preenchimento em telas pequenas */
+    }
+
+    .logo {
+        font-size: 2rem; /* Ajusta ainda mais o tamanho da fonte se necessário */
+    }
     .slides img {
         width: 100%;
     }
