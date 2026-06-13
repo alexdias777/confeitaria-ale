@@ -2,26 +2,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+    box-sizing: border-box; 
 }
 
 /* Body */
 body {
-    font-family: Arial, sans-serif; /* Fonte padrão do site */
-    background-color: #dddad4; /* Cor de fundo */
-    color: #333333; /* Cor do texto */
+    font-family: Arial, sans-serif; 
+    background-color: #dddad4; 
+    color: #333333; 
 }
 
 /* Cabeçalho */
 header {
-    background:  #C568DF; /* Cor de fundo do cabeçalho */
-    color: white; /* Cor do texto do cabeçalho */
-    width: 100%; /* Largura total do cabeçalho */
+    background:  #C568DF; 
+    color: white; 
+    width: 100%; 
     height: 4.6875rem;
-    padding: 0.9375rem 1.25rem; /* Preenchimento interno do cabeçalho */
-    display: flex; /* Usando flexbox para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    padding: 0.9375rem 1.25rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* titulo */
@@ -36,8 +36,8 @@ header {
 /* Centraliza o título e o parágrafo na seção desejada */
 section h2 {
     margin-top: 0.7%;
-    text-align: center; /* Centraliza o texto */
-    color: #0a0a0a; /* Cor padrão do site */
+    text-align: center; 
+    color: #0a0a0a; 
     font-family: 'Great Vibes', cursive; /* Fonte elegante */
 }
 
@@ -56,7 +56,7 @@ section h2 {
     transition: transform 0.5s ease;
 }
 
-/* ===== DESKTOP PADRÃO (4 imagens) ===== */
+/*DESKTOP 4 imagens */
 .slides img {
     width: 25%;
     height: clamp(220px, 22vw, 420px);
@@ -64,21 +64,21 @@ section h2 {
     flex-shrink: 0;
 }
 
-/* ===== TABLET (2 imagens) ===== */
+/*TABLET 2 imagens*/
 @media (max-width: 1024px) {
     .slides img {
         width: 50%;
     }
 }
 
-/* ===== CELULAR (1 imagem) ===== */
+/*CELULAR 1 imagem*/
 @media (max-width: 600px) {
     header {
-        padding: 1rem; /* Ajusta o preenchimento em telas pequenas */
+        padding: 1rem; 
     }
 
     .logo {
-        font-size: 2rem; /* Ajusta ainda mais o tamanho da fonte se necessário */
+        font-size: 2rem;
     }
     .slides img {
         width: 100%;
@@ -87,32 +87,32 @@ section h2 {
 
 
 button.prev, button.next {
-    position: absolute; /* Posiciona os botões sobre o carrossel */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
-    border: none; /* Sem borda */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    padding: 0.625rem; /* Preenchimento interno */
-    font-size: 1.125rem; /* Tamanho da fonte */
-    z-index: 10; /* Garante que os botões fiquem acima das imagens */
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: none; 
+    cursor: pointer; 
+    padding: 0.625rem; 
+    font-size: 1.125rem; 
+    z-index: 10; /* Garantindo que os botões fiquem acima das imagens */
 }
 
 button.prev {
-    left: 0.625rem; /* Distância da esquerda */
+    left: 0.625rem; 
 }
 
 button.next {
-    right: 0.625rem; /* Distância da direita */
+    right: 0.625rem; 
 }
 
 /* Seção de produtos */
 .produtos {
-    background: #dddad4; /* Fundo branco com leve transparência */
-    padding: 2.5rem; /* Preenchimento interno */
-    margin-top: 1.25rem; /* Margem superior */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    flex: 1; /* Permite que a seção de produtos ocupe o espaço restante */
+    background: #dddad4; 
+    padding: 2.5rem; 
+    margin-top: 1.25rem; 
+    border-radius: 0.5rem;
+    flex: 1; 
 }
 
 /* Grade de produtos */
@@ -125,10 +125,10 @@ button.next {
 /* Cada produto */
 .produto {
     height: 100%;
-    background: #5e5b5b27; /* Cor de fundo dos produtos */
-    padding: 1.25rem; /* Preenchimento interno */
-    text-align: center; /* Centraliza o texto */
-    border-radius: 0.5rem; /* Bordas arredondadas */
+    background: #5e5b5b27; 
+    padding: 1.25rem; 
+    text-align: center; 
+    border-radius: 0.5rem; 
 }
 
 /* Imagem circular */
@@ -150,13 +150,13 @@ button.next {
 
 /* bt carrinho */
 .add-to-cart {
-    background-color: #C568DF; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    padding: .625rem 1.25rem; /* Preenchimento interno */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    margin-top: .3125rem; /* Margem superior do botão */
+    background-color: #C568DF; 
+    color: white; 
+    border: none; 
+    border-radius: 0.5rem; 
+    padding: .625rem 1.25rem; 
+    cursor: pointer; 
+    margin-top: .3125rem; 
 }
 
 .add-to-cart:hover {
@@ -167,10 +167,10 @@ button.next {
 
 /* Carrinho de compras */
 .carrinho {
-    background: #dddad4; /* Fundo branco com leve transparência */
-    padding: 1.25rem; /* Preenchimento interno */
-    margin-top: 1.25rem; /* Margem superior */
-    border-radius: 0.5rem; /* Bordas arredondadas */
+    background: #dddad4; 
+    padding: 1.25rem; 
+    margin-top: 1.25rem; 
+    border-radius: 0.5rem; 
 }
 
 .carrinho h2 {
@@ -207,14 +207,14 @@ button.next {
 
 /* btn mensagem de finalização de compra */
 #GoIfood{
-    background-color: #C568DF; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
+    background-color: #C568DF; 
+    color: white; 
     font-size: 0.75rem;
-    border: none; /* Sem borda */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    padding: 0.625rem 1.25rem; /* Preenchimento interno */
+    border: none; 
+    border-radius: 0.5rem; 
+    padding: 0.625rem 1.25rem; 
 
-    margin-top: 1.25rem; /* Margem superior do botão */
+    margin-top: 1.25rem; 
     margin-bottom: .7125rem;
 }
 
@@ -252,11 +252,10 @@ button.next {
 
 /* Rodapé */
 footer {
-    background:  #C568DF; /* Cor de fundo do rodapé */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 1.00rem; /* Preenchimento interno */
-    /* height: 5vh; Altura fixa do rodapé */
-    margin-top: auto; /* Faz o rodapé se mover para a parte inferior */
+    background:  #C568DF; 
+    text-align: center; 
+    padding: 1.00rem; 
+    margin-top: auto; /* rodapé se mover para a parte inferior */
 }
 
 footer h4{
@@ -269,22 +268,22 @@ footer p{
 
 /* Botão "Voltar ao Topo" */
 #back-to-top {
-    position: fixed; /* Fixa na tela */
-    bottom: 1.25rem; /* Distância do fundo */
-    right: 1.25rem; /* Distância da direita */
-    display: none; /* Inicialmente escondido */
-    background-color: #81c9e6; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    padding: 0.625rem 15px; /* Preenchimento interno */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    position: fixed; 
+    bottom: 1.25rem; 
+    right: 1.25rem; 
+    display: none; 
+    background-color: #81c9e6; 
+    color: white; 
+    border: none; 
+    border-radius: 0.5rem; 
+    padding: 0.625rem 15px; 
+    cursor: pointer; 
+    z-index: 1000; /* Garantindo que fique acima de outros elementos */
 }
 
 /* Botão "Voltar ao Topo" em hover */
 #back-to-top:hover {
-    background-color: #af43f7; /* Cor ao passar o mouse */
+    background-color: #af43f7; 
 }
 
 

@@ -1,8 +1,8 @@
-// Aguarda o carregamento completo do DOM
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Evento para o botão "Finalizar Compra"
+    
     const finalizeButton = document.getElementById("GoIfood"); 
-    // Selecionando o botão no HTML
+   
 
     if (finalizeButton) {
         finalizeButton.addEventListener('click', function() {
@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Outras funções e eventos do seu código...
+    
 });
